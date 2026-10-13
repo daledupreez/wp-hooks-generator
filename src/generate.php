@@ -459,6 +459,7 @@ function hooks_parse_files( array $files, string $root, array $ignore_hooks, boo
 			}
 
 			$out['file'] = str_replace( "{$root}/", '', $filename );
+			$out['line'] = $expr->getStartLine();
 
 			switch ( $funcNameStr ) {
 				case 'do_action':

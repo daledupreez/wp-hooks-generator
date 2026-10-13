@@ -29,7 +29,8 @@
 					"file",
 					"type",
 					"doc",
-					"args"
+					"args",
+					"line"
 				],
 				"properties": {
 					"name": {
@@ -53,6 +54,15 @@
 						"type": "string",
 						"examples": [
 							"wp-admin/includes/menu.php"
+						]
+					},
+					"line": {
+						"description": "The line number of the hook in the file. -1 when unknown.",
+						"type": "integer",
+						"minimum": -1,
+						"examples": [
+							10,
+							-1
 						]
 					},
 					"type": {
